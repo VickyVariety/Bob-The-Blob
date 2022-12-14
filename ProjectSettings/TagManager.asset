@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - Hotdog
+  - Cheese
+  - InfoSign
+  - Donut
+  - FallDetector
+  - Checkpoint
+  - DangerZone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Ground
+  - Enemy
+  - DangerZone
+  - CameraBounds
+  - Sky
+  - CloudsBack
+  - CloudsFront
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1312570327
+    locked: 0
+  - name: Overlay
+    uniqueID: 2986814823
+    locked: 0
