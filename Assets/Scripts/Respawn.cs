@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+    Health health;
+    private int damage = 1;
     private Vector3 respawnPoint;
     public GameObject fallDetector;
 
     private void Start()
     {
+        health = GetComponent<Health>();
         SetRespawnPoint();
     }
     private void FixedUpdate()
@@ -36,6 +39,7 @@ public class Respawn : MonoBehaviour
     {
         if (collision.tag == "FallDetector")
         {
+            health.TakeDamage(damage);
             RespawnPlayer();
         }
         else if(collision.tag == "Checkpoint")

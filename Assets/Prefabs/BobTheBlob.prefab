@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 7867444128333170269}
   - component: {fileID: 1096321505250356229}
   - component: {fileID: 7867444128333170266}
-  - component: {fileID: 5384581283377592657}
   - component: {fileID: 261068580502032380}
   - component: {fileID: 261068580502032381}
   - component: {fileID: 261068580502032390}
@@ -216,6 +215,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e4236f45d5497a498756909ca97482c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hotdogSprite: {fileID: 0}
+  cheeseSprite: {fileID: 0}
+  donutSprite: {fileID: 0}
+  hotdogEmptySprite: {fileID: 2113987961, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
+  hotdogFullSprite: {fileID: 12394420, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
+  cheeseEmptySprite: {fileID: 1054868330, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
+  cheeseFullSprite: {fileID: 543646219, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
+  donutEmptySprite: {fileID: 640872191, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
+  donutFullSprite: {fileID: 170874228, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
 --- !u!114 &7867444128333170266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,18 +286,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &5384581283377592657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7976234195191614714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066627045243e7f4ca1c5f5beaad9d99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &261068580502032380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +313,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeartSprite: {fileID: -52758097, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
+  emptyHeartSprite: {fileID: -160042390, guid: d8b823bcc3ce0334989cd4ee31157303, type: 3}
 --- !u!114 &261068580502032390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,3 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   damageInterval: 1
+  blinkDuration: 1
+  blinkInterval: 0.1
+  knockbackForce: 10
+  knockbackDuration: 0.5
