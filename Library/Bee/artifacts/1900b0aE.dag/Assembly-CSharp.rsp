@@ -394,6 +394,7 @@
 "Assets/Scripts/Collectible.cs"
 "Assets/Scripts/Damage.cs"
 "Assets/Scripts/Health.cs"
+"Assets/Scripts/MovingPlatform.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Respawn.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
